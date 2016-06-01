@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Hello Riot.</title>
+  </head>
+  <body>
+    <!-- place the custom tag anywhere inside the body -->
+    <sample></sample>
+    <timer></timer>
+    <!-- include the tag -->
+    <script type="riot/tag" src="sample.tag"></script>
+    <script type="riot/tag" src="timer.tag"></script>
+    <!-- include riot.js -->
+    <script src="https://cdn.jsdelivr.net/riot/2.4/riot+compiler.min.js"></script>
+    <!-- mount the tag -->
+    <script>riot.mount('sample')</script>
+    <script>riot.mount('timer', {start: 0})</script>
+  </body>
+</html>
